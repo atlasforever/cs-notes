@@ -96,3 +96,207 @@ public:
     }
 };
 ```
+
+## 模板
+
+### 参数化类型
+
+模板接受类型与数值作为参数
+
+模板的代码实例化时才会生成，不能声明与定义分离在 .h 和 .cpp 中
+
+```cpp
+// 类模板
+template <typename T, int N>
+class Array {
+public:
+    // 数值参数 N 决定数组大小
+    T data[N];
+
+    // 类内直接定义，无需分离
+    int size() const { return N; }
+    T& operator[](int i) { return data[i]; }
+};
+
+// 函数模板
+template <typename T>
+T add(T a, T b) {
+    // 结合 lambda
+    auto calc = [](T x, T y) {
+        return x + y;
+    }
+
+    return calc(a, b);
+}
+
+void test()
+{
+    Array<double, 2> array;
+    array[0] = 0.4;
+
+    // 自动类型推导
+    auto res1 = add(10, 20);
+    // 显示指定类型
+    auto res2 = add<double>(1.5, 2.3);
+}
+```
+
+### 特化
+
+为特定类型提供特制的模板实现，根据类型自动选择
+
+**全特化（Full Specialization）** 的函数模板
+
+```cpp
+// 1. 通用模板
+template <typename T>
+bool isEqual(T a, T b) {
+    return a == b;
+}
+
+// 2. 全特化：针对 const char* 类型（字符串比较不能直接用 ==）
+template <>
+bool isEqual<const char*>(const char* a, const char* b) {
+    return strcmp(a, b) == 0;
+}
+```
+
+全特化类模板
+
+```cpp
+template <typename T>
+class Storage {
+    T data;
+};
+
+// 针对 bool 的特殊实现（比如为了节省空间用位操作）
+template <>
+class Storage<bool> {
+    unsigned char data; // 内部用 byte 存储
+};
+```
+
+### 别名
+
+通过固定部分或全部参数来定义一个新模板
+
+```cpp
+// 为复杂的 map 类型定义别名
+template <typename T>
+using StringMap = std::map<std::string, T>;
+
+int main() {
+    // 相当于 std::map<std::string, int>
+    StringMap<int> inventory; 
+    inventory["apple"] = 10;
+}
+```
+
+### 转发
+
+**转发（forward）** 在传值时保留参数的左右值属性和 const 修饰符
+
+没有转发时，传入右值也会被作为左值处理，进行多余的拷贝操作
+
+```cpp
+void real_work(int& n)  { /* 处理左值 */ }
+void real_work(int&& n) { /* 处理右值 */ }
+
+template<typename T>
+void wrapper(T arg) {
+    // 无论传进来是什么，arg 到了这里都是左值！
+    real_work(arg);
+}
+```
+
+完美转发保证实参的原样传入
+
+* `T&&` 在模板语境下是**万能引用**，同时接收左右值
+* `std::forward<T>` 根据原始参数还原形参的左右值属性
+
+```cpp
+void target(int& x)  { std::cout << "左值引用\n"; }
+void target(int&& x) { std::cout << "右值引用\n"; }
+
+template <typename T>
+void wrapper(T&& arg) { // 1. 使用万能引用
+    // 2. 使用 std::forward 恢复属性
+    target(std::forward<T>(arg)); 
+}
+
+int main() {
+    int a = 10;
+    wrapper(a);   // 输出：左值引用
+    wrapper(20);  // 输出：右值引用
+}
+```
+
+## 实用功能
+
+### 智能指针
+
+`std::unique_ptr` 独占所有权，不可拷贝，大多数场景的默认选择
+
+```cpp
+// 推荐：使用 make_unique (C++14)
+auto p1 = std::make_unique<int>(10);
+
+// 所有权转移
+auto p2 = std::move(p1); 
+if (!p1) std::cout << "p1 is now empty";
+```
+
+`std::shared_ptr` 共享所有权，引用计数，其循环引用时会无法释放
+
+```cpp
+struct B;
+struct A { std::shared_ptr<B> b; ~A(){ puts("A dead"); } };
+struct B { std::shared_ptr<A> a; ~B(){ puts("B dead"); } };
+
+void leak() {
+    auto a = std::make_shared<A>();
+    auto b = std::make_shared<B>();
+    a->b = b;
+    b->a = a; 
+} // 结束后没有任何输出，内存泄露
+```
+
+`std::weak_ptr` 不持有所有权，解决循环引用
+
+```cpp
+struct B;
+struct A { std::shared_ptr<B> b; ~A(){ puts("A dead"); } };
+struct B { std::weak_ptr<A> a;   ~B(){ puts("B dead"); } }; // 改为 weak
+
+void fix() {
+    auto a = std::make_shared<A>();
+    auto b = std::make_shared<B>();
+    a->b = b;
+    b->a = a; 
+} // 输出：A dead \n B dead，内存成功释放
+```
+
+**智能指针应仅用于表达所有权管理**，不操作生存期的函数应当接受原始指针或引用
+
+```cpp
+void update_score(Player& player) {
+    player.set_score(100); // 直接修改内部状态
+}
+
+// 调用时：
+auto u_ptr = std::make_unique<Player>("Alice");
+update_score(*u_ptr);  // 解引用，直接传入内部对象的引用
+```
+
+### function
+
+`function` 可持有任何对象并通过调用操作符`()`调用的类型
+
+```cpp
+int f1(double);
+std::function<int(double)> fct1 {f1};
+
+// fct2 的类型是 function<void(Shape*)>
+std::function fct2 = [](Shape* p) { p->draw(); };
+fct2(); // 调用
+```
