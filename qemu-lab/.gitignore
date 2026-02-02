@@ -1,0 +1,5 @@
+busybox-*
+linux-*
+rootfs_root/
+rootfs.img.gz
+
