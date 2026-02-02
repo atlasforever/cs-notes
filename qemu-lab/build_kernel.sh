@@ -31,5 +31,5 @@ scripts/config --enable CONFIG_DEBUG_INFO
 # 4. 解决配置依赖并编译
 make olddefconfig
 make zImage dtbs -j$(nproc)
-
+make modules_prepare
 echo "Kernel Build Finished!"
