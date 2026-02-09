@@ -5,7 +5,7 @@ COMMON_DIR := $(shell dirname $(abspath $(lastword $(MAKEFILE_LIST))))
 include $(COMMON_DIR)/../env.mk
 
 # 定义模块名
-obj-m := dummy_char.o
+obj-m := char.o
 # 如果是 platform 驱动，这里就改写成 obj-m := my_platform_dev.o
 
 PWD := $(shell pwd)
