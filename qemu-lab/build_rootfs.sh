@@ -10,7 +10,7 @@ cat <<EOF > rootfs_root/etc/init.d/rcS
 #!/bin/sh
 mount -t proc none /proc
 mount -t sysfs none /sys
-/sbin/mdev -s
+/sbin/mdev -d
 # 自动挂载宿主机共享目录
 mount -t 9p -o trans=virtio hostshare /mnt/shared
 echo "--- QEMU ARM32 Lab Started ---"
