@@ -11,4 +11,5 @@ qemu-system-arm -M vexpress-a9 \
     -append "console=ttyAMA0 root=/dev/ram rdinit=/sbin/init" \
     -nographic \
     -fsdev local,security_model=none,id=fsdev0,path=./shared_dir \
+    -device ds1338,address=0x68 \
     -device virtio-9p-device,fsdev=fsdev0,mount_tag=hostshare
