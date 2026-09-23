@@ -24,15 +24,41 @@ initial begin
     zero = 0;
     bus = 1;
 
-    repeat(1) @(posedge clk)
+    // 等待一个clk
+    repeat(1) @(posedge clk);
     bus = 2;
 
-    repeat(1) @(posedge clk)
+    repeat(1) @(posedge clk);
     a = 0;
 
-    repeat(1) @(posedge clk)
+    repeat(1) @(posedge clk);
     a = 1;
     bus = 3;
+
+    repeat(1) @(posedge clk);
+    a = 0;
+
+    repeat(2) @(posedge clk);
+    a = 1;
+    bus = 4;
+
+    repeat(3) @(posedge clk);
+    a = 0;
+
+    repeat(1) @(posedge clk);
+    a = 1;
+    bus = 5;
+
+    repeat(2) @(posedge clk);
+    a = 0;
+
+    repeat(1) @(posedge clk);
+    zero = 1;
+
+    repeat(2) @(posedge clk);
+    bus = 6;
+
+    repeat(2) @(posedge clk);
 
     $finish;    
 end
