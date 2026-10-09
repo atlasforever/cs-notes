@@ -13,7 +13,7 @@
   * UpperCamelCase
 * 变量
   * lowerCamelCase
-  * 成员变量 `_m` 前缀
+  * 成员变量 `m_` 前缀
 * 函数
   * UpperCamelCase
 * namespace
