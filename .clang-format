@@ -6,7 +6,7 @@ Standard: c++17
 IndentWidth: 4
 TabWidth: 4
 UseTab: Never
-ColumnLimit: 100
+ColumnLimit: 80
 
 BreakBeforeBraces: Attach
 AllowShortFunctionsOnASingleLine: Empty
@@ -27,13 +27,13 @@ BinPackParameters: false
 AllowAllArgumentsOnNextLine: true
 AllowAllParametersOfDeclarationOnNextLine: true
 
-SortIncludes: Never
+SortIncludes: CaseSensitive
 IncludeBlocks: Preserve
 
 AlignAfterOpenBracket: Align
 AlignConsecutiveAssignments: false
 AlignConsecutiveDeclarations: false
-AlignTrailingComments: true
+AlignTrailingComments: false
 
 KeepEmptyLinesAtTheStartOfBlocks: false
 MaxEmptyLinesToKeep: 1
@@ -43,6 +43,6 @@ AccessModifierOffset: -4
 
 Cpp11BracedListStyle: true
 ConstructorInitializerIndentWidth: 4
-BreakConstructorInitializers: BeforeComma
+BreakConstructorInitializers: BeforeColon
 
-ReflowComments: true
+ReflowComments: false

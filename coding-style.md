@@ -1,6 +1,6 @@
 # C++ Coding Style
 
-使用 https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines
+遵守 C++ Core Guildlines <https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines>
 
 ## Naming & Layout
 
@@ -18,6 +18,19 @@
   * UpperCamelCase
 * namespace
   * lower_snake_case
+
+### 括号
+
+```cpp
+/// Wrong.
+if (condition)
+    do_something;
+
+/// Correct
+if (condition) {
+    do_something;
+}
+```
 
 ### 成员声明顺序
 
