@@ -15,9 +15,31 @@
   * lowerCamelCase
   * 成员变量 `m_` 前缀
 * 函数
-  * UpperCamelCase
+  * lowerCamelCase
 * namespace
   * lower_snake_case
+
+### 文件内部定义
+
+SF.22: Use an unnamed (anonymous) namespace for all internal/non-exported entities
+
+内部的辅助类型和函数优先放在匿名 namespace 中：
+
+```cpp
+// bad
+static int f();
+int g();
+static bool h();
+int k();
+
+// good
+namespace {
+    int f();
+    bool h();
+}
+int g();
+int k();
+```
 
 ### 括号
 
