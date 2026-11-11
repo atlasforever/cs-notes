@@ -1,0 +1,3 @@
+[submodule "rtos-stm32/rtos-stm32/labs/00-environment/lesson04-posix/third_party/FreeRTOS-Kernel"]
+	path = rtos-stm32/rtos-stm32/labs/00-environment/lesson04-posix/third_party/FreeRTOS-Kernel
+	url = https://github.com/FreeRTOS/FreeRTOS-Kernel.git
