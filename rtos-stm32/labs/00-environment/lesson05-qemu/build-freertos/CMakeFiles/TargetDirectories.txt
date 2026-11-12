@@ -1,0 +1,11 @@
+/home/zhaozj/my/cs-notes/rtos-stm32/labs/00-environment/lesson05-qemu/build-freertos/CMakeFiles/firmware.elf.dir
+/home/zhaozj/my/cs-notes/rtos-stm32/labs/00-environment/lesson05-qemu/build-freertos/CMakeFiles/edit_cache.dir
+/home/zhaozj/my/cs-notes/rtos-stm32/labs/00-environment/lesson05-qemu/build-freertos/CMakeFiles/rebuild_cache.dir
+/home/zhaozj/my/cs-notes/rtos-stm32/labs/00-environment/lesson05-qemu/build-freertos/freertos-kernel/CMakeFiles/freertos_kernel.dir
+/home/zhaozj/my/cs-notes/rtos-stm32/labs/00-environment/lesson05-qemu/build-freertos/freertos-kernel/CMakeFiles/edit_cache.dir
+/home/zhaozj/my/cs-notes/rtos-stm32/labs/00-environment/lesson05-qemu/build-freertos/freertos-kernel/CMakeFiles/rebuild_cache.dir
+/home/zhaozj/my/cs-notes/rtos-stm32/labs/00-environment/lesson05-qemu/build-freertos/freertos-kernel/include/CMakeFiles/edit_cache.dir
+/home/zhaozj/my/cs-notes/rtos-stm32/labs/00-environment/lesson05-qemu/build-freertos/freertos-kernel/include/CMakeFiles/rebuild_cache.dir
+/home/zhaozj/my/cs-notes/rtos-stm32/labs/00-environment/lesson05-qemu/build-freertos/freertos-kernel/portable/CMakeFiles/freertos_kernel_port.dir
+/home/zhaozj/my/cs-notes/rtos-stm32/labs/00-environment/lesson05-qemu/build-freertos/freertos-kernel/portable/CMakeFiles/edit_cache.dir
+/home/zhaozj/my/cs-notes/rtos-stm32/labs/00-environment/lesson05-qemu/build-freertos/freertos-kernel/portable/CMakeFiles/rebuild_cache.dir

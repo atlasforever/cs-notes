@@ -1,0 +1,444 @@
+Archive member included to satisfy reference by file (symbol)
+
+freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+                              CMakeFiles/firmware.elf.dir/main.c.obj (xTaskCreate)
+freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+                              freertos-kernel/libfreertos_kernel.a(tasks.c.obj) (pvPortMalloc)
+freertos-kernel/libfreertos_kernel.a(port.c.obj)
+                              freertos-kernel/libfreertos_kernel.a(tasks.c.obj) (pxPortInitialiseStack)
+freertos-kernel/libfreertos_kernel.a(list.c.obj)
+                              freertos-kernel/libfreertos_kernel.a(tasks.c.obj) (vListInitialise)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 CMakeFiles/firmware.elf.dir/startup.S.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/firmware.elf.dir/startup.S.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/firmware.elf.dir/startup.S.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/firmware.elf.dir/main.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/firmware.elf.dir/main.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/firmware.elf.dir/main.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/firmware.elf.dir/runtime.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/firmware.elf.dir/runtime.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/firmware.elf.dir/runtime.c.obj
+ .text.memcpy   0x0000000000000000       0x3c CMakeFiles/firmware.elf.dir/runtime.c.obj
+ .text          0x0000000000000000        0x0 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .data          0x0000000000000000        0x0 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss           0x0000000000000000        0x0 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskEndScheduler
+                0x0000000000000000       0x30 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskGetTickCount
+                0x0000000000000000       0x1c freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskGetTickCountFromISR
+                0x0000000000000000       0x24 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.uxTaskGetNumberOfTasks
+                0x0000000000000000       0x14 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.pcTaskGetName
+                0x0000000000000000       0x34 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskCatchUpTicks
+                0x0000000000000000       0x44 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskPlaceOnEventList
+                0x0000000000000000       0x34 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskPlaceOnUnorderedEventList
+                0x0000000000000000       0x84 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskRemoveFromEventList
+                0x0000000000000000      0x19c freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskRemoveFromUnorderedEventList
+                0x0000000000000000      0x15c freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskSetTimeOutState
+                0x0000000000000000       0x38 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskInternalSetTimeOutState
+                0x0000000000000000       0x2c freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskCheckForTimeOut
+                0x0000000000000000       0x94 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskMissedYield
+                0x0000000000000000       0x18 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskGetCurrentTaskHandle
+                0x0000000000000000       0x1c freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskGetCurrentTaskHandleForCore
+                0x0000000000000000       0x30 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.uxTaskResetEventItemValue
+                0x0000000000000000       0x30 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.ulTaskGenericNotifyTake
+                0x0000000000000000       0xf8 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskGenericNotifyWait
+                0x0000000000000000      0x12c freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskGenericNotify
+                0x0000000000000000      0x200 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskGenericNotifyFromISR
+                0x0000000000000000      0x278 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskGenericNotifyGiveFromISR
+                0x0000000000000000      0x1d8 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskGenericNotifyStateClear
+                0x0000000000000000       0x68 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.ulTaskGenericNotifyValueClear
+                0x0000000000000000       0x70 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskResetState
+                0x0000000000000000       0x94 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text          0x0000000000000000        0x0 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .data          0x0000000000000000        0x0 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .bss           0x0000000000000000        0x0 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .rodata.xHeapStructSize
+                0x0000000000000000        0x4 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text.xPortGetFreeHeapSize
+                0x0000000000000000       0x14 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text.xPortGetMinimumEverFreeHeapSize
+                0x0000000000000000       0x14 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text.xPortResetHeapMinimumEverFreeHeapSize
+                0x0000000000000000       0x1c freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text.vPortInitialiseBlocks
+                0x0000000000000000        0xc freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text.pvPortCalloc
+                0x0000000000000000       0x60 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text.vPortGetHeapStats
+                0x0000000000000000       0xbc freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text.vPortHeapResetState
+                0x0000000000000000       0x40 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text          0x0000000000000000        0x0 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ .data          0x0000000000000000        0x0 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ .bss           0x0000000000000000        0x0 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ .rodata.pcInterruptPriorityRegisters
+                0x0000000000000000        0x4 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ .text.vPortEndScheduler
+                0x0000000000000000       0x1c freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ .text.vPortValidateInterruptPriority
+                0x0000000000000000       0x54 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ .text          0x0000000000000000        0x0 freertos-kernel/libfreertos_kernel.a(list.c.obj)
+ .data          0x0000000000000000        0x0 freertos-kernel/libfreertos_kernel.a(list.c.obj)
+ .bss           0x0000000000000000        0x0 freertos-kernel/libfreertos_kernel.a(list.c.obj)
+ .text.vListInsertEnd
+                0x0000000000000000       0x46 freertos-kernel/libfreertos_kernel.a(list.c.obj)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+CODE             0x0000000000000000 0x0000000000400000 xr
+RAM              0x0000000020000000 0x0000000000400000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD CMakeFiles/firmware.elf.dir/startup.S.obj
+LOAD CMakeFiles/firmware.elf.dir/main.c.obj
+LOAD CMakeFiles/firmware.elf.dir/runtime.c.obj
+LOAD freertos-kernel/libfreertos_kernel.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a
+                0x0000000020400000                __stack_top = (ORIGIN (RAM) + LENGTH (RAM))
+
+.isr_vector     0x0000000000000000       0x40
+ *(.isr_vector)
+ .isr_vector    0x0000000000000000       0x40 CMakeFiles/firmware.elf.dir/startup.S.obj
+
+.text           0x0000000000000040     0x14dc
+ *(.text*)
+ .text.Reset_Handler
+                0x0000000000000040       0x40 CMakeFiles/firmware.elf.dir/startup.S.obj
+                0x0000000000000040                Reset_Handler
+ .text.Default_Handler
+                0x0000000000000080        0x2 CMakeFiles/firmware.elf.dir/startup.S.obj
+ *fill*         0x0000000000000082        0x2 
+ .text.uart_init
+                0x0000000000000084       0x20 CMakeFiles/firmware.elf.dir/main.c.obj
+ .text.uart_putc
+                0x00000000000000a4       0x30 CMakeFiles/firmware.elf.dir/main.c.obj
+ .text.uart_puts
+                0x00000000000000d4       0x2a CMakeFiles/firmware.elf.dir/main.c.obj
+ *fill*         0x00000000000000fe        0x2 
+ .text.demo_task
+                0x0000000000000100       0x1c CMakeFiles/firmware.elf.dir/main.c.obj
+ .text.main     0x000000000000011c       0x54 CMakeFiles/firmware.elf.dir/main.c.obj
+                0x000000000000011c                main
+ .text.memset   0x0000000000000170       0x34 CMakeFiles/firmware.elf.dir/runtime.c.obj
+                0x0000000000000170                memset
+ .text.prvCreateTask
+                0x00000000000001a4       0x78 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskCreate
+                0x000000000000021c       0x46 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x000000000000021c                xTaskCreate
+ .text.prvInitialiseNewTask
+                0x0000000000000262       0xf2 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.prvAddNewTaskToReadyList
+                0x0000000000000354      0x128 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskDelay
+                0x000000000000047c       0x54 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x000000000000047c                vTaskDelay
+ .text.prvCreateIdleTasks
+                0x00000000000004d0       0xb0 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskStartScheduler
+                0x0000000000000580       0x68 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000000000580                vTaskStartScheduler
+ .text.vTaskSuspendAll
+                0x00000000000005e8       0x1c freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x00000000000005e8                vTaskSuspendAll
+ .text.xTaskResumeAll
+                0x0000000000000604      0x1fc freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000000000604                xTaskResumeAll
+ .text.xTaskIncrementTick
+                0x0000000000000800      0x21c freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000000000800                xTaskIncrementTick
+ .text.vTaskSwitchContext
+                0x0000000000000a1c       0xa4 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000000000a1c                vTaskSwitchContext
+ .text.prvIdleTask
+                0x0000000000000ac0       0x30 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.prvInitialiseTaskLists
+                0x0000000000000af0       0x6c freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.prvCheckTasksWaitingTermination
+                0x0000000000000b5c        0xc freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.prvResetNextTaskUnblockTime
+                0x0000000000000b68       0x34 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.prvAddCurrentTaskToDelayedList
+                0x0000000000000b9c       0xac freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.pvPortMalloc
+                0x0000000000000c48      0x1cc freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+                0x0000000000000c48                pvPortMalloc
+ .text.vPortFree
+                0x0000000000000e14       0xa8 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+                0x0000000000000e14                vPortFree
+ .text.prvHeapInit
+                0x0000000000000ebc       0xb4 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text.prvInsertBlockIntoFreeList
+                0x0000000000000f70       0xd4 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text.pxPortInitialiseStack
+                0x0000000000001044       0x58 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+                0x0000000000001044                pxPortInitialiseStack
+ .text.prvTaskExitError
+                0x000000000000109c       0x44 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ .text.vPortSVCHandler
+                0x00000000000010e0       0x28 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+                0x00000000000010e0                vPortSVCHandler
+ .text.prvPortStartFirstTask
+                0x0000000000001108       0x24 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ .text.xPortStartScheduler
+                0x000000000000112c      0x124 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+                0x000000000000112c                xPortStartScheduler
+ .text.vPortEnterCritical
+                0x0000000000001250       0x4c freertos-kernel/libfreertos_kernel.a(port.c.obj)
+                0x0000000000001250                vPortEnterCritical
+ .text.vPortExitCritical
+                0x000000000000129c       0x3c freertos-kernel/libfreertos_kernel.a(port.c.obj)
+                0x000000000000129c                vPortExitCritical
+ .text.xPortPendSVHandler
+                0x00000000000012d8       0x48 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+                0x00000000000012d8                xPortPendSVHandler
+ .text.xPortSysTickHandler
+                0x0000000000001320       0x44 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+                0x0000000000001320                xPortSysTickHandler
+ .text.vPortSetupTimerInterrupt
+                0x0000000000001364       0x34 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+                0x0000000000001364                vPortSetupTimerInterrupt
+ .text.vListInitialise
+                0x0000000000001398       0x3e freertos-kernel/libfreertos_kernel.a(list.c.obj)
+                0x0000000000001398                vListInitialise
+ .text.vListInitialiseItem
+                0x00000000000013d6       0x18 freertos-kernel/libfreertos_kernel.a(list.c.obj)
+                0x00000000000013d6                vListInitialiseItem
+ .text.vListInsert
+                0x00000000000013ee       0x70 freertos-kernel/libfreertos_kernel.a(list.c.obj)
+                0x00000000000013ee                vListInsert
+ .text.uxListRemove
+                0x000000000000145e       0x52 freertos-kernel/libfreertos_kernel.a(list.c.obj)
+                0x000000000000145e                uxListRemove
+ *(.rodata*)
+ .rodata        0x00000000000014b0       0x61 CMakeFiles/firmware.elf.dir/main.c.obj
+ *fill*         0x0000000000001511        0x3 
+ .rodata        0x0000000000001514        0x5 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ *(.ARM.exidx*)
+                0x000000000000151c                . = ALIGN (0x4)
+ *fill*         0x0000000000001519        0x3 
+
+.glue_7         0x000000000000151c        0x0
+ .glue_7        0x000000000000151c        0x0 linker stubs
+
+.glue_7t        0x000000000000151c        0x0
+ .glue_7t       0x000000000000151c        0x0 linker stubs
+
+.vfp11_veneer   0x000000000000151c        0x0
+ .vfp11_veneer  0x000000000000151c        0x0 linker stubs
+
+.v4_bx          0x000000000000151c        0x0
+ .v4_bx         0x000000000000151c        0x0 linker stubs
+
+.iplt           0x000000000000151c        0x0
+ .iplt          0x000000000000151c        0x0 CMakeFiles/firmware.elf.dir/startup.S.obj
+
+.rel.dyn        0x000000000000151c        0x0
+ .rel.iplt      0x000000000000151c        0x0 CMakeFiles/firmware.elf.dir/startup.S.obj
+
+.data           0x0000000020000000        0x8 load address 0x000000000000151c
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                __data_start__ = .
+ *(.data*)
+ .data.uxTopUsedPriority
+                0x0000000020000000        0x4 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .data.uxCriticalNesting
+                0x0000000020000004        0x4 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+                0x0000000020000008                . = ALIGN (0x4)
+                0x0000000020000008                __data_end__ = .
+                0x000000000000151c                __data_load__ = LOADADDR (.data)
+
+.igot.plt       0x0000000020000008        0x0 load address 0x0000000000001524
+ .igot.plt      0x0000000020000008        0x0 CMakeFiles/firmware.elf.dir/startup.S.obj
+
+.bss            0x0000000020000008    0x100fc load address 0x0000000000001524
+                0x0000000020000008                . = ALIGN (0x4)
+                0x0000000020000008                __bss_start__ = .
+ *(.bss*)
+ .bss.pxCurrentTCB
+                0x0000000020000008        0x4 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000020000008                pxCurrentTCB
+ .bss.pxReadyTasksLists
+                0x000000002000000c       0x64 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xDelayedTaskList1
+                0x0000000020000070       0x14 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xDelayedTaskList2
+                0x0000000020000084       0x14 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.pxDelayedTaskList
+                0x0000000020000098        0x4 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.pxOverflowDelayedTaskList
+                0x000000002000009c        0x4 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xPendingReadyList
+                0x00000000200000a0       0x14 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.uxCurrentNumberOfTasks
+                0x00000000200000b4        0x4 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xTickCount
+                0x00000000200000b8        0x4 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.uxTopReadyPriority
+                0x00000000200000bc        0x4 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xSchedulerRunning
+                0x00000000200000c0        0x4 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xPendedTicks
+                0x00000000200000c4        0x4 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xYieldPendings
+                0x00000000200000c8        0x4 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xNumOfOverflows
+                0x00000000200000cc        0x4 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.uxTaskNumber
+                0x00000000200000d0        0x4 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xNextTaskUnblockTime
+                0x00000000200000d4        0x4 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xIdleTaskHandles
+                0x00000000200000d8        0x4 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.uxSchedulerSuspended
+                0x00000000200000dc        0x4 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.ucHeap    0x00000000200000e0    0x10000 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .bss.xStart    0x00000000200100e0        0x8 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .bss.pxEnd     0x00000000200100e8        0x4 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .bss.xFreeBytesRemaining
+                0x00000000200100ec        0x4 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .bss.xMinimumEverFreeBytesRemaining
+                0x00000000200100f0        0x4 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .bss.xNumberOfSuccessfulAllocations
+                0x00000000200100f4        0x4 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .bss.xNumberOfSuccessfulFrees
+                0x00000000200100f8        0x4 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .bss.ucMaxSysCallPriority
+                0x00000000200100fc        0x1 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ *fill*         0x00000000200100fd        0x3 
+ .bss.ulMaxPRIGROUPValue
+                0x0000000020010100        0x4 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ *(COMMON)
+                0x0000000020010104                . = ALIGN (0x4)
+                0x0000000020010104                __bss_end__ = .
+OUTPUT(firmware.elf elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x0000000000000000       0x2f
+ .ARM.attributes
+                0x0000000000000000       0x21 CMakeFiles/firmware.elf.dir/startup.S.obj
+ .ARM.attributes
+                0x0000000000000021       0x2d CMakeFiles/firmware.elf.dir/main.c.obj
+ .ARM.attributes
+                0x000000000000004e       0x2d CMakeFiles/firmware.elf.dir/runtime.c.obj
+ .ARM.attributes
+                0x000000000000007b       0x2d freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .ARM.attributes
+                0x00000000000000a8       0x2d freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .ARM.attributes
+                0x00000000000000d5       0x2d freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ .ARM.attributes
+                0x0000000000000102       0x2d freertos-kernel/libfreertos_kernel.a(list.c.obj)
+
+.comment        0x0000000000000000       0x33
+ .comment       0x0000000000000000       0x33 CMakeFiles/firmware.elf.dir/main.c.obj
+                                         0x34 (size before relaxing)
+ .comment       0x0000000000000033       0x34 CMakeFiles/firmware.elf.dir/runtime.c.obj
+ .comment       0x0000000000000033       0x34 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .comment       0x0000000000000033       0x34 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .comment       0x0000000000000033       0x34 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ .comment       0x0000000000000033       0x34 freertos-kernel/libfreertos_kernel.a(list.c.obj)
+
+.debug_line     0x0000000000000000     0x1e66
+ .debug_line    0x0000000000000000       0xa7 CMakeFiles/firmware.elf.dir/startup.S.obj
+ .debug_line    0x00000000000000a7      0x1f0 CMakeFiles/firmware.elf.dir/main.c.obj
+ .debug_line    0x0000000000000297      0x100 CMakeFiles/firmware.elf.dir/runtime.c.obj
+ .debug_line    0x0000000000000397      0xee2 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_line    0x0000000000001279      0x509 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_line    0x0000000000001782      0x3fe freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ .debug_line    0x0000000000001b80      0x2e6 freertos-kernel/libfreertos_kernel.a(list.c.obj)
+
+.debug_info     0x0000000000000000     0x2429
+ .debug_info    0x0000000000000000       0x22 CMakeFiles/firmware.elf.dir/startup.S.obj
+ .debug_info    0x0000000000000022      0x14d CMakeFiles/firmware.elf.dir/main.c.obj
+ .debug_info    0x000000000000016f      0x122 CMakeFiles/firmware.elf.dir/runtime.c.obj
+ .debug_info    0x0000000000000291     0x1660 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_info    0x00000000000018f1      0x488 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_info    0x0000000000001d79      0x3f4 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ .debug_info    0x000000000000216d      0x2bc freertos-kernel/libfreertos_kernel.a(list.c.obj)
+
+.debug_abbrev   0x0000000000000000      0x8f6
+ .debug_abbrev  0x0000000000000000       0x12 CMakeFiles/firmware.elf.dir/startup.S.obj
+ .debug_abbrev  0x0000000000000012       0xc9 CMakeFiles/firmware.elf.dir/main.c.obj
+ .debug_abbrev  0x00000000000000db       0xc2 CMakeFiles/firmware.elf.dir/runtime.c.obj
+ .debug_abbrev  0x000000000000019d      0x2c9 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_abbrev  0x0000000000000466      0x190 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_abbrev  0x00000000000005f6      0x218 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ .debug_abbrev  0x000000000000080e       0xe8 freertos-kernel/libfreertos_kernel.a(list.c.obj)
+
+.debug_aranges  0x0000000000000000      0x318
+ .debug_aranges
+                0x0000000000000000       0x28 CMakeFiles/firmware.elf.dir/startup.S.obj
+ .debug_aranges
+                0x0000000000000028       0x40 CMakeFiles/firmware.elf.dir/main.c.obj
+ .debug_aranges
+                0x0000000000000068       0x28 CMakeFiles/firmware.elf.dir/runtime.c.obj
+ .debug_aranges
+                0x0000000000000090      0x160 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_aranges
+                0x00000000000001f0       0x70 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_aranges
+                0x0000000000000260       0x78 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ .debug_aranges
+                0x00000000000002d8       0x40 freertos-kernel/libfreertos_kernel.a(list.c.obj)
+
+.debug_str      0x0000000000000000     0x1553
+ .debug_str     0x0000000000000000       0xb1 CMakeFiles/firmware.elf.dir/startup.S.obj
+ .debug_str     0x00000000000000b1      0x183 CMakeFiles/firmware.elf.dir/main.c.obj
+                                        0x21c (size before relaxing)
+ .debug_str     0x0000000000000234       0x76 CMakeFiles/firmware.elf.dir/runtime.c.obj
+                                        0x190 (size before relaxing)
+ .debug_str     0x00000000000002aa      0xb50 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+                                        0xcca (size before relaxing)
+ .debug_str     0x0000000000000dfa      0x38d freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+                                        0x540 (size before relaxing)
+ .debug_str     0x0000000000001187      0x2e0 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+                                        0x4a0 (size before relaxing)
+ .debug_str     0x0000000000001467       0xec freertos-kernel/libfreertos_kernel.a(list.c.obj)
+                                        0x33c (size before relaxing)
+
+.debug_ranges   0x0000000000000000      0x2b0
+ .debug_ranges  0x0000000000000000       0x20 CMakeFiles/firmware.elf.dir/startup.S.obj
+ .debug_ranges  0x0000000000000020       0x30 CMakeFiles/firmware.elf.dir/main.c.obj
+ .debug_ranges  0x0000000000000050       0x18 CMakeFiles/firmware.elf.dir/runtime.c.obj
+ .debug_ranges  0x0000000000000068      0x150 freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_ranges  0x00000000000001b8       0x60 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_ranges  0x0000000000000218       0x68 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ .debug_ranges  0x0000000000000280       0x30 freertos-kernel/libfreertos_kernel.a(list.c.obj)
+
+.debug_frame    0x0000000000000000      0xb00
+ .debug_frame   0x0000000000000000       0xbc CMakeFiles/firmware.elf.dir/main.c.obj
+ .debug_frame   0x00000000000000bc       0x60 CMakeFiles/firmware.elf.dir/runtime.c.obj
+ .debug_frame   0x000000000000011c      0x5ec freertos-kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_frame   0x0000000000000708      0x190 freertos-kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_frame   0x0000000000000898      0x190 freertos-kernel/libfreertos_kernel.a(port.c.obj)
+ .debug_frame   0x0000000000000a28       0xd8 freertos-kernel/libfreertos_kernel.a(list.c.obj)

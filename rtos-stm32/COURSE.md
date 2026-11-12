@@ -28,7 +28,7 @@
 - VSCode + Remote WSL
 - WSL2 Ubuntu 22.04
 - GCC、Arm GNU Toolchain
-- CMake + Ninja
+- CMake + GNU Make
 - GDB / GDB-Multiarch
 - QEMU System ARM
 - STM32CubeMX（图形化配置）
@@ -64,7 +64,7 @@
 学习内容：
 - VSCode Remote WSL 工作方式。
 - GCC 与 Arm GCC 的区别。
-- CMake、Ninja、Makefile。
+- CMake、Makefile。
 - GDB 与 QEMU。
 - FreeRTOS POSIX 和 Cortex-M3 QEMU 工程的区别。
 
@@ -530,3 +530,11 @@
 8. 对不同 FreeRTOS 版本、编译器和 Cortex-M 内核的差异进行明确说明。
 9. 不确定的 API 行为、寄存器含义和硬件特性，应查阅官方资料，不凭经验猜测。
 
+知识点组织与章节边界
+
+1. 每个知识点必须有一个明确的主要归属章节，在该章节集中完成定义、原理、设计原因、源码分析、实验和考核。
+2. 前置章节允许为了实验需要提前使用后续知识，但只介绍完成当前实验所必需的内容，不提前展开系统教学。
+3. 后续章节遇到已学知识时，优先引用原章节，不重复讲解基础内容。
+4. 如果后续章节需要从不同层次深入同一知识点，应明确说明新增的研究角度，避免重复教学。
+5. 每章结束时整理该章的核心知识笔记，保证相关概念能够集中查阅，而不是散落在不同课程记录中。
+6. 课程实验可以提前接触后续章节的 API 或现象，但不得因此改变知识点的主要归属章节。
